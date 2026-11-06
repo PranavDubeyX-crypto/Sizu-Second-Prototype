@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b12">
+    <title>SIZU PRANAV — AI Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="app">
+        <header class="topbar">
+            <div class="brand">SIZU <span>PRANAV</span></div>
+            <div id="connection-status">INITIALIZING</div>
+        </header>
+
+        <section id="character-stage">
+            <div id="sizu-character">
+                <div id="character-placeholder">
+                    SIZU
+                </div>
+            </div>
+
+            <div id="emotion-label">NORMAL</div>
+            <p id="character-message">Systems initializing...</p>
+        </section>
+
+        <section id="chat-section">
+            <div id="chat-messages"></div>
+
+            <div class="input-area">
+                <button id="mic-button" aria-label="Start microphone">
+                    MIC
+                </button>
+
+                <input
+                    id="user-input"
+                    type="text"
+                    placeholder="Talk to SIZU..."
+                    autocomplete="off"
+                >
+
+                <button id="send-button">SEND</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
